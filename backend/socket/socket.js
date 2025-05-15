@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
 	cors: {
-		origin: "https://mern-chatapplication-1-962t.onrender.com", // 👈 Your actual frontend port
+		origin: "http://localhost:5173", // 👈 Your actual frontend port
 		methods: ["GET", "POST"],
 		credentials: true, // 👈 Required if using cookies or auth
 	},
