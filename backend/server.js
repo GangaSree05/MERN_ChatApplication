@@ -45,6 +45,8 @@ const io = new Server(server, {
   },
 });
 
+app.set("io", io);
+
 const userSocketMap = {};
 export const getReceiverSocketId = (receiverId) => userSocketMap[receiverId];
 
