@@ -7,7 +7,10 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
 	cors: {
-		origin: "http://localhost:5173", // 👈 Your actual frontend port
+		origin: [
+			"http://localhost:5173",
+			"https://mern-chat-application-omega.vercel.app"
+		],
 		methods: ["GET", "POST"],
 		credentials: true, // 👈 Required if using cookies or auth
 	},
