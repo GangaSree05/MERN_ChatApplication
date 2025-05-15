@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://mern-chatapplication-1-962t.onrender.com"],
+    origin: ["http://localhost:5173", "https://mern-chat-application-omega.vercel.app"],
     credentials: true,
   })
 );
