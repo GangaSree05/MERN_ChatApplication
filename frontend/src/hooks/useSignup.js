@@ -12,7 +12,7 @@ const useSignup = () => {
 
 		setLoading(true);
 		try {
-			const res = await fetch("https://mern-chatapplication-u203.onrender.com/api/auth/signup", {
+			const res = await fetch("https://mern-chatapplication-1-962t.onrender.com/api/auth/signup", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   credentials: "include", // if you use cookies or sessions
