@@ -15,12 +15,13 @@ const PORT = process.env.PORT || 5000;
 // Middlewares
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-  cors({
-    origin: "http://localhost:5173",
-    credentials: true,
-  })
-);
+// ...existing code...
+const cors = require('cors');
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://mern-chat-application-omega.vercel.app'],
+  credentials: true
+}));
+// ...existing code...
 
 
 // Test route
